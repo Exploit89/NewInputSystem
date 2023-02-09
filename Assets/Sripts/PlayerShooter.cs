@@ -1,15 +1,28 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-
-[RequireComponent(typeof(PlayerInput))]
 
 public class PlayerShooter : MonoBehaviour
 {
-    private int shoot = 0;
+    private PlayerInput _playerInput;
 
-    public void OnShoot(InputAction.CallbackContext context)
+    void Awake()
     {
-        shoot++;
-        Debug.Log($"shoot - {shoot}");
+        _playerInput = new PlayerInput();
+
+        _playerInput.Player.Shoot.performed += ctx => OnShoot();
+    }
+
+    private void OnEnable()
+    {
+        _playerInput.Enable();
+    }
+
+    private void OnDisable()
+    {
+        _playerInput.Disable();
+    }
+
+    public void OnShoot()
+    {
+        Debug.Log($"shoot");
     }
 }
