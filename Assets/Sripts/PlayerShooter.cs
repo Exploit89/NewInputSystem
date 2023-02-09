@@ -9,6 +9,7 @@ public class PlayerShooter : MonoBehaviour
         _playerInput = new PlayerInput();
 
         _playerInput.Player.Shoot.performed += ctx => OnShoot();
+        _playerInput.Player.Move.performed += ctx => OnMove();
     }
 
     private void OnEnable()
@@ -24,5 +25,11 @@ public class PlayerShooter : MonoBehaviour
     public void OnShoot()
     {
         Debug.Log($"shoot");
+    }
+
+    public void OnMove()
+    {
+        Vector2 moveDirection = _playerInput.Player.Move.ReadValue<Vector2>();
+        Debug.Log(moveDirection);
     }
 }
