@@ -9,15 +9,15 @@
                     "name": "Move",
                     "type": "Value",
                     "id": "e38a63c6-bcdd-410e-be11-6b1c080ebbf5",
-                    "expectedControlType": "",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 },
                 {
-                    "name": "Shoot",
-                    "type": "Button",
-                    "id": "623aec2b-e154-4739-b641-80ebc9603625",
-                    "expectedControlType": "Button",
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "13426793-5999-444e-8198-2fefc6798fbd",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 }
@@ -26,10 +26,10 @@
                 {
                     "name": "",
                     "id": "f725329e-a870-4c6e-99f8-73d694a58e76",
-                    "path": "",
+                    "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -91,23 +91,23 @@
                 },
                 {
                     "name": "",
-                    "id": "71eb73b8-b94c-45dd-a737-b38346a29341",
-                    "path": "<Mouse>/leftButton",
+                    "id": "7f4dfdee-e849-4883-8156-ad9f8d84acff",
+                    "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Mouse and Keyboard",
-                    "action": "Shoot",
+                    "groups": "Gamepad",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "3f86f532-8ed3-4d5f-a034-3aad1437d219",
-                    "path": "<Gamepad>/rightTrigger",
+                    "id": "1c92e284-eee0-4ea6-88a8-337b6059d4fc",
+                    "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Shoot",
+                    "groups": "Mouse and Keyboard",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
