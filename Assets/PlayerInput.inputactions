@@ -44,6 +44,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "fc2d5de1-c542-4e6a-984c-8004c37b5fae",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -198,6 +206,17 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Throw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6c127e15-423f-4a17-8724-c0a9599fc23a",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "MultiTap",
+                    "processors": "",
+                    "groups": "Mouse and Keyboard",
+                    "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
